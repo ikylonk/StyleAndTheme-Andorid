@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/pixel_google" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextContent.Small.White"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#4D000000"
+                android:drawableStart="@drawable/ic_collections_white_18dp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/dummy_photos" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextContent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/dummy_value"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/stock" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextContent"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/content_text" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/specification" />
+
+        <TableLayout
+            style="@style/TextContent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/TextSpec.Field"
+                    android:text="@string/display" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_display" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/TextSpec.Field"
+                    android:text="@string/size" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_size" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/TextSpec.Field"
+                    android:text="@string/battery" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/TextSpec.Value"
+                    android:text="@string/content_specs_battery" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/seller" />
+
+        <RelativeLayout
+            style="@style/TextContent"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/photo_2" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/TextContent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/profile"
+                android:text="@string/my_name" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/ButtonPrimary"
+            android:text="@string/buy" />
+
+    </LinearLayout>
+</ScrollView>
